@@ -1,0 +1,37 @@
+
+  <div class="wrapper">
+    
+    <!-- Sidebar  -->
+    <nav id="sidebar" [ngClass]="status ? 'hide' : 'show'">
+        <div id="dismiss" (click)="clickEvent2()">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="sidebar-header">
+            <h3>Menu</h3>
+        </div>
+        <ul class="list-unstyled components">
+          <!--img src="assets/user/user.jpg" id="avatar" style="width: 50px; height: 50px;"-->
+            <h1>{{user.nom}}</h1>
+            <mat-divider></mat-divider>
+            <li >
+                      <a routerLinkActive="list-item-active" [routerLink]="['/user/res']">
+                        <mat-icon>home</mat-icon> Accueil
+                      </a>
+            </li>
+            <li>
+              <a  routerLinkActive="list-item-active" [routerLink]="['/user/reserve']">
+                <mat-icon>event_note</mat-icon>Mes Réservations
+              </a>
+            </li>
+            <li>
+              <a  routerLinkActive="list-item-active" [routerLink]="['/user/edit']">
+                <mat-icon>account_circle</mat-icon>Mon profil
+              </a>
+            </li>
+        </ul>
+    </nav>
+   
+    
+
+  </div>
+  <!--div class="overlay"  [ngClass]="status ? 'active' : ''"></div-->

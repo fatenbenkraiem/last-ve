@@ -1,0 +1,17 @@
+ b{
+   align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #010102;
+  }
+  .e-profile .mx-auto #avatar img {
+    width: 90px;
+    height: 90px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
